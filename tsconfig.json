@@ -14,9 +14,8 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["./src/*"],
+      "~/*": ["./src/*"]
     },
     "types": [
       "@nuxt/schema",

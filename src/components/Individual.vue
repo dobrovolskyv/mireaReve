@@ -1,5 +1,14 @@
 <script setup lang="ts">
 import  Button from "@/components/UI/Button.vue"
+
+import {ref} from "vue"
+import Popup from "./Popup.vue";
+
+const showModal = ref(false)
+const showModalPopup = () => {
+  showModal.value = !showModal.value
+}
+
 </script>
 
 <template>
@@ -11,6 +20,8 @@ import  Button from "@/components/UI/Button.vue"
       гармонии
     </h2>
     <p class="text-sm">Мы создаем постельное белье и текстиль из натуральных тканей, чтобы вы чувствовали заботу, тепло и тишину в каждом прикосновении</p>
-    <Button bgColor="transparent" label="Индивидуальное подбор"/>
+    <Button bgColor="transparent" label="Индивидуальное подбор" @click="showModalPopup" />
+
+    <Popup v-model="showModal" />
   </div>
 </template>

@@ -1,22 +1,35 @@
 <script setup >
-
+import Button from "../components/UI/Button.vue";
+import Slides from "../components/Slides.vue";
 import CardList from "../components/CardList.vue";
 import Sets from "../components/Sets.vue";
 import Footer from "../layouts/Footer.vue";
+
+
 
 </script>
 
 <template>
   <div class="container">
-    <div class="flex items-center justify-between">
-      <p>1</p>
-      <p>2</p>
+    <div class="flex items-center justify-between w-full gap-2 h-[495px] mb-[60px]">
+      <div class="w-full h-full bg-gray-300 rounded-lg p-10 text-center">
+        <h2>Мягкость</h2>
+        <p>которую хочется ощущать</p>
+ 
+      <NuxtLink to="katalog">
+        <Button label="Каталог товаров"/>
+      </NuxtLink>
+      </div>
+      <div class="w-full h-full bg-gray-300 rounded-lg p-10">
+
+        <Slides/>
+      </div>
     </div>
 
     <Individual />
 
-   <Banner/>
-
+   <Marque/>
+   <Popup/>
 
 
     <CardList />

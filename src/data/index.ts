@@ -1,23 +1,33 @@
 export const navItems = [
     {
       id: 1,
+      title: "Каталог",
+      link: "/katalog",
+    },
+    {
+      id: 2,
       title: "Новинки",
       link: "/novinki",
     },
     {
-      id: 2,
+      id: 3,
       title: "Подушки",
       link: "/podushki",
     },
     {
-      id: 3,
+      id: 4,
       title: "Постельное",
       link: "/postelnoe",
     },
     {
-      id: 4,
+      id: 5,
       title: "наборы",
       link: "/nabori",
+    },
+    {
+      id: 6,
+      title: "блог",
+      link: "/blog",
     },
   ];
 

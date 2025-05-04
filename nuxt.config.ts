@@ -1,4 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+/// <reference types="nuxt" />
+
+import tsconfigPaths from 'vite-tsconfig-paths' 
+
 export default defineNuxtConfig({
   srcDir: 'src/',
   devtools: { enabled: true },
@@ -10,7 +14,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     "@nuxt/image",
-    '@pinia/nuxt'
+    '@pinia/nuxt',
+    'nuxt-marquee',
   ],
 
   css: ['@/assets/css/main.css'],
@@ -21,9 +26,8 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-
+ 
   image: {
-    // Настраиваем локальный провайдер
     providers: {
       ipx: {
         name: 'ipx',
@@ -32,6 +36,9 @@ export default defineNuxtConfig({
       }
     }
   },
+  vite: {
+    plugins: [tsconfigPaths()]
+  },
 
-  compatibilityDate: '2025-04-27'
+  compatibilityDate: '2025-05-03',
 })
