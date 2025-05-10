@@ -22,6 +22,7 @@
       "@nuxt/image"  
     ]
   },
+  "include": ["**/*.ts", "**/*.d.ts", "**/*.vue"],
   "exclude": [
     "node_modules",
     ".nuxt",

@@ -1,39 +1,45 @@
-<script setup >
-import Button from "../components/UI/Button.vue";
+<script setup>
+import Button from "../components/UI/Button.vue"
 import Slides from "../components/Slides.vue";
 import CardList from "../components/CardList.vue";
 import Sets from "../components/Sets.vue";
 import Footer from "../layouts/Footer.vue";
-
+import IndividualMain from "@/components/IndividualMain.vue";
+import Marque from "@/components/Marque.vue";
+import Popup from "@/components/Popup.vue";
 
 
 </script>
 
 <template>
   <div class="container">
-    <div class="flex items-center justify-between w-full gap-2 h-[495px] mb-[60px]">
-      <div class="w-full h-full bg-gray-300 rounded-lg p-10 text-center">
-        <h2>Мягкость</h2>
-        <p>которую хочется ощущать</p>
- 
-      <NuxtLink to="katalog">
-        <Button label="Каталог товаров"/>
-      </NuxtLink>
+    <div class="flex items-center justify-between w-full gap-2 h-[495px] my-[60px] ">
+      <div class="w-full h-full bg-gray-300 rounded-lg p-10 text-center flex flex-col justify-between items-center">
+        <span></span>
+        <div>
+
+          <h2 class="text-5xl">Мягкость</h2>
+          <p class="text-2xl">которую хочется ощущать</p>
+        </div>
+
+        <NuxtLink to="/katalog">
+          <Button label="Каталог товаров" bgColor="transparent"/>
+        </NuxtLink>
       </div>
-      <div class="w-full h-full bg-gray-300 rounded-lg p-10">
+      <div class="w-full h-full bg-gray-300 rounded-lg p-10 flex flex-col justify-between items-center">
 
         <Slides/>
+        <img class="mt-14" src="@/assets/img/icons/logo.png" alt="logo"/>
       </div>
     </div>
 
-    <Individual />
+    <IndividualMain/>
 
-   <Marque/>
-   <Popup/>
+    <Marque/>
+    <Popup/>
 
 
-    <CardList />
-
+    <CardList/>
 
 
     <!-- <Card
@@ -71,8 +77,8 @@ import Footer from "../layouts/Footer.vue";
       </div>
     </div> -->
 
-    <Sets />
-    
-    <Footer />
+    <Sets/>
+
+    <Footer/>
   </div>
 </template>

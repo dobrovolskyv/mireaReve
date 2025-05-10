@@ -6,6 +6,7 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 export default defineNuxtConfig({
   srcDir: 'src/',
   devtools: { enabled: true },
+  components: true,
 
   alias: {
     '@data': '/src/data', 
@@ -26,7 +27,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
- 
+  // @ts-expect-error
   image: {
     providers: {
       ipx: {

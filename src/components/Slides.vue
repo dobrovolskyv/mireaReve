@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 // Import Swiper Vue.js components
 import Card from "./UI/Card.vue";
 
