@@ -6,16 +6,16 @@ import Button from "./UI/Button.vue";
 
 <template>
   <div class="flex items-center justify-between gap-3 my-10 h-[400px]">
-    <div class="bg-gray-500 w-full rounded-xl h-full">
-        <img :src="sets" class="w-full h-full object-cover rounded-xl" />
+    <div class="bg-gray-500 w-full rounded-[20px] h-full">
+        <img :src="sets" class="w-full h-full object-cover rounded-[20px]" >
     </div>
 
-    <div class="relative group w-full h-[400px] rounded-xl overflow-hidden">
+    <div class="relative group w-full h-[400px] rounded-[20px] overflow-hidden">
     <img
       :src="sets"
       alt="Background"
       class="object-cover w-full h-full"
-    />
+    >
 
     <!-- Тёмная подложка + текст -->
     <div

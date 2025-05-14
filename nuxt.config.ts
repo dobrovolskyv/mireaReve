@@ -1,15 +1,25 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 /// <reference types="nuxt" />
 
-import tsconfigPaths from 'vite-tsconfig-paths' 
+import tsconfigPaths from 'vite-tsconfig-paths'
 
 export default defineNuxtConfig({
+  app: {
+    head: {
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        }
+      ]
+    }
+  },
   srcDir: 'src/',
   devtools: { enabled: true },
   components: true,
 
   alias: {
-    '@data': '/src/data', 
+    '@data': '/src/data',
   },
 
   modules: [

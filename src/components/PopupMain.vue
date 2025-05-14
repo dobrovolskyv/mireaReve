@@ -28,7 +28,7 @@ const submitform = (e: Event) => {
   <div
       v-if="modelValue"
       class="fixed z-[100] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[635px] w-full
-      bg-gray-100 rounded-[20px] flex flex-col items-start justify-between p-10"
+      bg-white rounded-[20px] flex flex-col items-start justify-between p-10"
   >
     <img
         class="absolute top-14 right-14 cursor-pointer"
@@ -43,7 +43,8 @@ const submitform = (e: Event) => {
         вдохновлённый эстетикой нашего бренда
       </p>
 
-      <img src="@/assets/img/icons/logo_mini.png" alt="logo" class="mt-6 w-[150px]"/>
+      <img  src="@/assets/img/icons/logo_popup.png" alt="logo" class="mt-16 max-w-[250px] w-full">
+
     </div>
 
 
@@ -60,12 +61,12 @@ const submitform = (e: Event) => {
           class="border-0 bg-transparent w-full py-3 border-b border-[#D0D5DD] text-md focus:outline-none text-black"
           type="text"
           placeholder="Имя"
-      />
+      >
       <input
           class="border-0 bg-transparent w-full py-3 border-b border-[#D0D5DD] text-md focus:outline-none text-black"
           type="tel"
           placeholder="Телефон"
-      />
+      >
 
       <textarea
           name=""

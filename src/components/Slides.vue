@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 // Import Swiper styles
 import "swiper/css";
 
-const onSwiper = (swiper) => {
+const onSwiper = (swiper:any) => {
   console.log(swiper);
 };
 
