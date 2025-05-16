@@ -39,7 +39,7 @@ onUnmounted(() => {
             <li v-for="item in navItems" :key="item.id">
               <NuxtLink
                 :to="item.link"
-                class="bg-black rounded-full text-white px-2 py-1"
+                class=" text-black text-md"
                 >{{ item.title }}</NuxtLink
               >
             </li>

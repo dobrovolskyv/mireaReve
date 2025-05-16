@@ -28,13 +28,13 @@ const onSlideChange = () => {
       class="w-[314px]"
     >
       <swiper-slide>
-        <Card label="1" price="10200rub" description="2" />
+        <Card label="Silken Sateen" price="10200rub" description="Комплект постельного" />
       </swiper-slide>
       <swiper-slide>
-        <Card label="2" price="10200rub" description="2" />
+        <Card label="Silken Sateen2" price="10200rub" description="Комплект постельного" />
       </swiper-slide>
       <swiper-slide>
-        <Card label="3" price="10200rub" description="2" />
+        <Card label="Silken Sateen3" price="10200rub" description="Комплект постельного" />
       </swiper-slide>
     </swiper>
   
