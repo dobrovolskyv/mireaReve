@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {ref} from "vue";
+import { ref } from "vue";
 
 defineProps({
     modelValue: Boolean,
@@ -14,12 +14,11 @@ const close = () => {
     success.value = false
 }
 
-
-
 </script>
 
 <template>
-    <div v-if="modelValue" class="fixed z-[100] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[635px] w-full bg-white rounded-[20px] flex flex-col items-start justify-between p-10 pt-28 ">
+    <div v-if="modelValue"
+        class="fixed z-[100] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[635px] w-full bg-white rounded-[20px] flex flex-col items-start justify-between p-10 pt-28 ">
         <img class="absolute top-14 right-14 cursor-pointer" src="@/assets/img/icons/close.svg" alt="close"
             @click="close">
 

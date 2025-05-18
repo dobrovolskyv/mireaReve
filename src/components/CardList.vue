@@ -16,6 +16,7 @@ const filteredItems = computed(() => {
   );
 });
 
+
 const setCategory = (category) => {
   activeCategory.value = category;
 };
@@ -73,6 +74,7 @@ const setCategory = (category) => {
         :price="item.price"
         :imgSrc="item.imgSrc"
         :description="item.description"
+      
       />
     </NuxtLink>
     </div>

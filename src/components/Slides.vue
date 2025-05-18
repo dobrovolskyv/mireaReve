@@ -34,7 +34,7 @@ const onSlideChange = () => {
         <Card label="Silken Sateen2" price="10200rub" description="Комплект постельного" />
       </swiper-slide>
       <swiper-slide>
-        <Card label="Silken Sateen3" price="10200rub" description="Комплект постельного" />
+        <Card  label="Silken Sateen3" price="10200rub" description="Комплект постельного" />
       </swiper-slide>
     </swiper>
   

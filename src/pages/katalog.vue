@@ -1,5 +1,10 @@
 <script setup >
 
+
+definePageMeta({
+  layout: "Header",
+})
+
 </script>
 <template>
   <div>

@@ -79,8 +79,7 @@ const submitform = (e: Event) => {
       <Button
           label="Отправить звявку"
           bgColor="bg-black"
-          class="text-white w-full mt-[77px] uppercase "
-
+          class="text-white w-full mt-[77px] uppercase"
       />
     </form>
 

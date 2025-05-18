@@ -12,6 +12,9 @@ module.exports = {
         success: '#00C48C',
         error: '#FF5631',
       },
+      borderRadius:{
+        main: '20px',
+      },
       fontSize: {
         "md": '16px',
         "title": '32px',
@@ -21,7 +24,7 @@ module.exports = {
       },
       container:{
         center: true,
-        padding: "32px",
+        padding: "15px",
       }
     },
   },
