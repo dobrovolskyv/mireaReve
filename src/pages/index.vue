@@ -28,7 +28,7 @@ import HeroCatalog from "@/components/HeroCatalog.vue";
       <Popup/>
 
 
-      <CardList/>
+      <!-- <CardList/> -->
       <KatalogMain/>
 
 

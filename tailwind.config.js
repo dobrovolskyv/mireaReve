@@ -22,10 +22,10 @@ module.exports = {
       fontFamily:{
         Montserrat: ['Montserrat', 'sans-serif'],
       },
-      // container:{
-      //   center: true,
-      //   padding: "15px",
-      // }
+      container:{
+        center: true,
+        padding: "15px",
+      }
     },
   },
   plugins: [],
