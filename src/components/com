@@ -38,3 +38,29 @@ const { isFavorite, toggle } = useFavoriteItem(id);
     <span v-else>🤍</span>
   </button>
 </template>
+
+📁 Где их хранить?
+По стандарту:
+/composables/useFavoriteItem.ts
+
+И тогда Nuxt 3 сам его подцепит (если включён auto-import), и ты даже можешь не писать import вручную.
+
+Без composable:
+ts
+Копировать
+Редактировать
+const favoritesStore = useFavoritesStore()
+const isFavorite = computed(() => favoritesStore.favorites.includes(id))
+const toggleFavorite = () => {
+  favoritesStore.toggleFavorite(id)
+}
+Ты будешь писать это снова и снова в разных компонентах. А это уже 🙅‍♀️
+
+С composable:
+ts
+Копировать
+Редактировать
+import { useFavoriteItem } from "@/composables/useFavoriteItem"
+const { isFavorite, toggle } = useFavoriteItem(id)
+Гораздо чище, да?
+
