@@ -21,6 +21,10 @@ import HeroCatalog from "@/components/HeroCatalog.vue";
       <SlidesWrapper/>
       </div>
 
+прайм тайм
+созвоны
+команда
+
       <Marque/>
 
       <IndividualMain/>
@@ -28,7 +32,7 @@ import HeroCatalog from "@/components/HeroCatalog.vue";
       <Popup/>
 
 
-      <!-- <CardList/> -->
+      <CardList/>
       <KatalogMain/>
 
 

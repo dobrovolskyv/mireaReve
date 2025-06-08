@@ -1,6 +1,6 @@
 <template>
   <div class="w-full h-full md:h-[495px] bg-gray-300 rounded-[20px] p-5 text-center flex flex-col
-            justify-between items-center relative">
+            justify-between items-center relative overflow-hidden">
     <div class="flex items-center justify-between w-full ">
       <div class="flex items-center justify-between gap-6">
         <img src="@/assets/img/icons/logo_mini.png" alt="mirea reve">

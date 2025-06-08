@@ -1,6 +1,7 @@
 <script setup >
 import { navItems } from "@/data";
 import { ref, onMounted, onUnmounted } from "vue";
+import { ROUTES } from "@/utils/routes";
 
 const showNav = ref(false);
 
@@ -40,7 +41,7 @@ onUnmounted(() => {
             </li>
           </ul>
         </nav>
-        <NuxtLink to="favorites">favorites</NuxtLink>
+        <NuxtLink :to="ROUTES.FAVORITES">favorites</NuxtLink>
       </div>
     </div>
     <slot />
