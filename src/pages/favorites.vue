@@ -18,9 +18,15 @@
 <script setup>
 import { useFavoritesStore } from "@/stores/favorites";
 import { cardItems } from "@/data"; // 
+import { onMounted, computed } from "vue";
 
 const favoritesStore = useFavoritesStore()
 
+onMounted(() => {
+  favoritesStore.init()
+})
+
 // Находим все товары, ID которых есть в избранном
-const favorites = cardItems.filter((item) => favoritesStore.favorites.includes(item.id));;
+const favorites = computed(() =>
+  cardItems.filter((item) => favoritesStore.favorites.includes(item.id)));
 </script>

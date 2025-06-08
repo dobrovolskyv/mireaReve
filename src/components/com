@@ -1,0 +1,40 @@
+ 1. Хелпер-композицию (useFavoriteItem.ts)
+Создай один простой composable, который можно использовать в любом компоненте:
+
+ts
+Копировать
+Редактировать
+// composables/useFavoriteItem.ts
+import { computed } from "vue";
+import { useFavoritesStore } from "@/stores/favorites";
+
+export function useFavoriteItem(id: number) {
+  const store = useFavoritesStore();
+
+  const isFavorite = computed(() => store.favorites.includes(id));
+
+  const toggle = () => {
+    store.toggleFavorite(id);
+  };
+
+  return { isFavorite, toggle };
+}
+
+✅ 2. Пример использования в компоненте
+ts
+Копировать
+Редактировать
+<script setup>
+import { useRoute } from "vue-router";
+import { useFavoriteItem } from "@/composables/useFavoriteItem";
+
+const id = Number(useRoute().params.id);
+const { isFavorite, toggle } = useFavoriteItem(id);
+</script>
+
+<template>
+  <button @click="toggle">
+    <span v-if="isFavorite">❤️</span>
+    <span v-else>🤍</span>
+  </button>
+</template>
