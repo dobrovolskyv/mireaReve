@@ -20,7 +20,7 @@ const submitform = (e: Event) => {
 
   setTimeout(() => {
     close()
-  }, 5000)
+  }, 51000)
 }
 </script>
 
@@ -31,14 +31,14 @@ const submitform = (e: Event) => {
       bg-white rounded-[20px] flex flex-col items-start justify-between p-10"
   >
     <img
-        class="absolute top-14 right-14 cursor-pointer"
+        class="absolute top-14 right-14 cursor-pointer "
         src="@/assets/img/icons/close.svg" alt="close"
         @click="close"
     >
 
     <div v-if="success" class="text-center w-full flex flex-col items-center justify-center ">
       <h3 class="text-title leading-[150%] font-semibold text-black uppercase mt-1">ВАША ЗАЯВКА<br> УСПЕШНО ОТПРАВЛЕНА</h3>
-      <p class="text-md mt-5 text-[#282828] max-w-[380px]">
+      <p class="text-md mt-5 text-secondary max-w-[380px]">
         Наш эксперт свяжется с вами в ближайшее время — мы уже подбираем для вас комфорт,
         вдохновлённый эстетикой нашего бренда
       </p>
@@ -49,9 +49,9 @@ const submitform = (e: Event) => {
 
 
     <form v-else class="flex flex-col gap-3 w-full" @submit="submitform">
-      <div class="max-w-[396px] text-left mb-10">
-        <h3 class="text-[32px] font-semibold text-black">Индивидуальный подбор</h3>
-        <p class="text-black text-md ">
+      <div class="max-w-[416px] text-left mb-10">
+        <h3 class="text-[32px] font-semibold text-black w-full">Индивидуальный подбор</h3>
+        <p class="text-secondary text-md leading-[150%] mt-5 ">
           Мы подберём комплекты, максимально подходящие под ваш вкус, интерьер и
           образ жизни
         </p>

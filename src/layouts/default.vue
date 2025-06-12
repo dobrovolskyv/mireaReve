@@ -3,6 +3,7 @@
   import { ref, onMounted, onUnmounted } from "vue";
   import SearchHeader from "@/components/SearchHeader.vue";
   import { useSearchStore } from "@/stores/search";
+  import Footer from "./Footer.vue";
 
   const showNav = ref(false);
   const searchStore = useSearchStore()
@@ -24,7 +25,7 @@
 
   onUnmounted(() => {
     window.removeEventListener("scroll", handleScroll);
-    
+
   });
 </script>
 
@@ -82,7 +83,10 @@
 
       </div>
     </div>
-    <slot />
   </header>
+  <main >
+    <slot />
+  </main>
+  <Footer />
 </template>
 

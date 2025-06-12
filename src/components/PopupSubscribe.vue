@@ -24,7 +24,7 @@ const close = () => {
 
         <div class="text-center w-full flex flex-col items-center justify-center ">
             <h3 class="text-title leading-[150%] font-semibold text-black uppercase mt-1">Готово</h3>
-            <p class="text-md mt-5 text-[#282828] max-w-[380px]">
+            <p class="text-md mt-5 text-secondary max-w-[380px]">
                 Спасибо за подписку! <br>
                 Теперь — только тщательно отобранные письма<br> с тем, что действительно вдохновляет и стоит<br>
                 вашего внимания.

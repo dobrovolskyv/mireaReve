@@ -11,6 +11,7 @@ module.exports = {
         background: '#F8F8F8',
         success: '#00C48C',
         error: '#FF5631',
+        secondary: '#282828',
       },
       borderRadius:{
         main: '20px',

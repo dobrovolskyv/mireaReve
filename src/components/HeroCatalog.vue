@@ -7,7 +7,7 @@
         <img  class="cursor-pointer" src="@/assets/img/icons/search.png" alt="poisk">
       </div>
       <NuxtLink to="/novinki" class="bg-black text-white py-2.5 px-7 rounded-[20px] uppercase">Новинки</NuxtLink>
-      <div class="circle__white absolute -top-12 left-[44%] bg-white rounded-full w-16 h-16 xl:w-24 xl:h-24"></div>
+      <div class="circle__white absolute -top-12 left-[44%] bg-[#D9D9D9] rounded-full w-16 h-16 xl:w-24 xl:h-24"></div>
     </div>
     <div>
 

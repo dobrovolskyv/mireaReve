@@ -21,10 +21,6 @@ import HeroCatalog from "@/components/HeroCatalog.vue";
       <SlidesWrapper/>
       </div>
 
-прайм тайм
-созвоны
-команда
-
       <Marque/>
 
       <IndividualMain/>
