@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex flex-col-reverse md:flex-row items-start justify-between container mt-20 gap-4">
+    <div class="flex flex-col-reverse md:flex-row items-start justify-between container mt-20 gap-4 mb-[125px]">
       <!-- img placeholders -->
       <div class="flex flex-col gap-4 w-[800px]">
         <div class="bg-gray-100 rounded-lg w-full h-[400px]"></div>
@@ -47,7 +47,7 @@
               <span class="text-sm text-gray-400 font-light">В наличии </span>
             </div>
           </div>
-          <div class="flex items-center justify-between gap-2 py-2 border-y my-5">
+          <div class="flex items-center justify-between gap-2 py-2 border-y border-[#c3c3c3] my-5">
             <span class="text-md font-bold">Цвет </span>
             <span class="bg-black rounded-full w-6 h-6"> </span>
           </div>
@@ -93,7 +93,7 @@
               <span class="text-xl">Описание</span>
             </div>
             <transition name="fade">
-              <div v-if="sections.description" class="mt-2 text-sm text-gray-500 leading-6">
+              <div v-if="sections.description" class="mt-2 pl-[30px] text-sm text-gray-500 leading-6">
                 <p>{{ product.description }}</p>
               </div>
             </transition>
@@ -108,8 +108,8 @@
               <span class="text-xl">Уход</span>
             </div>
             <transition name="fade">
-              <div v-if="sections.care" class="mt-2 text-sm text-gray-500 leading-6">
-                <p>{{ product.description }}</p>
+              <div v-if="sections.care" class="mt-2 pl-[30px] text-sm text-gray-500 leading-6">
+                <p>{{ product.care }}</p>
               </div>
             </transition>
           </div>
@@ -123,8 +123,8 @@
               <span class="text-xl">Доставка</span>
             </div>
             <transition name="fade">
-              <div v-if="sections.dilevery" class="mt-2 text-sm text-gray-500 leading-6">
-                <p>{{ product.description }}</p>
+              <div v-if="sections.dilevery" class="mt-2 pl-[30px] text-sm text-gray-500 leading-6">
+                <p>{{ product.dilevery }}</p>
               </div>
             </transition>
           </div>
@@ -133,7 +133,6 @@
         <div v-else class="p-10 text-red-500">Товар не найден 😢</div>
       </div>
     </div>
-    <Footer />
   </div>
 </template>
 
