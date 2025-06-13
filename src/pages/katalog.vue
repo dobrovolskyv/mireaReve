@@ -6,14 +6,14 @@
     </div>
 
 
-    <div class="flex items-start justify-between max-w-[1260px] mx-auto">
+    <div class="flex items-start gap-[115px]  max-w-[1260px] mx-auto mt-[140px]">
 
-      <div class="w-full  max-w-xs bg-gray-100 p-6 rounded-lg space-y-6 text-sm font-medium text-black">
+      <div class="w-full  max-w-xs  p-6 rounded-lg space-y-6 text-sm font-medium text-black">
         <h2 class="text-lg font-bold">ВСЕ ФИЛЬТРЫ</h2>
 
         <!-- Цена -->
         <div>
-          <label class="block mb-2">Цена ₽</label>
+          <label class="block mb-2 font-bold">Цена ₽</label>
           <div class="flex gap-2">
             <input type="text" placeholder="От" class="w-1/2 p-2 rounded bg-white border border-gray-300" />
             <input type="text" placeholder="До" class="w-1/2 p-2 rounded bg-white border border-gray-300" />
@@ -22,7 +22,7 @@
 
         <!-- Категория -->
         <div>
-          <label class="block mb-2">Категория</label>
+          <label class="block mb-2 font-bold">Категория</label>
           <input type="text" placeholder="Найдите в списке"
             class="w-full p-2 mb-2 rounded bg-white border border-gray-300" />
           <div class="max-h-32 overflow-y-auto space-y-2 pr-2">
@@ -37,7 +37,7 @@
 
         <!-- Цвет -->
         <div>
-          <label class="block mb-2">Цвет</label>
+          <label class="block mb-2 font-bold">Цвет</label>
           <div class="max-h-32 overflow-y-auto space-y-2 pr-2">
             <template v-for="i in 7" :key="i">
               <div class="flex items-center">
@@ -52,7 +52,7 @@
 
         <!-- Размер -->
         <div>
-          <label class="block mb-2">Размер</label>
+          <label class="block mb-2 font-bold">Размер</label>
           <div class="space-y-2">
             <div><input type="checkbox" id="r1" class="mr-2"><label for="r1">Односпальный</label></div>
             <div><input type="checkbox" id="r2" class="mr-2"><label for="r2">Полутороспальный</label></div>
@@ -65,7 +65,7 @@
 
         <!-- Состав -->
         <div>
-          <label class="block mb-2">Состав</label>
+          <label class="block mb-2 font-bold">Состав</label>
           <div class="max-h-32 overflow-y-auto space-y-2 pr-2">
             <div><input type="checkbox" id="c1" class="mr-2"><label for="c1">Хлопок</label></div>
             <div><input type="checkbox" id="c2" class="mr-2"><label for="c2">Сатин</label></div>
@@ -79,7 +79,7 @@
 
         <!-- Зона использования -->
         <div>
-          <label class="block mb-2">Зона использования</label>
+          <label class="block mb-2 font-bold">Зона использования</label>
           <div class="space-y-2">
             <div><input type="checkbox" id="z1" class="mr-2"><label for="z1">Спальня</label></div>
             <div><input type="checkbox" id="z2" class="mr-2"><label for="z2">Кухня</label></div>
@@ -95,7 +95,8 @@
         <button class="w-full bg-black text-white py-2 rounded-full mt-2 hover:opacity-90 transition">ПОКАЗАТЬ</button>
       </div>
 
-      <div></div>
+        <CardList />
+    
 
     </div>
 
@@ -103,6 +104,8 @@
 </template>
 
 <script setup>
+import CardList from '@/components/CardList.vue';
+
 
 
 </script>

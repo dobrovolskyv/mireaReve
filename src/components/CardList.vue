@@ -23,8 +23,8 @@ const setCategory = (category) => {
 </script>
 
 <template>
-  <div class="my-10">
-    <div class="flex items-center justify-between">
+  <div class="">
+    <!-- <div class="flex items-center justify-between">
       <div>
         <p class="text-sm">Шопинг по категориям</p>
         <h2 class="text-xl uppercase">ВсЕ для идеального сна</h2>
@@ -58,10 +58,10 @@ const setCategory = (category) => {
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
 
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4 mt-10"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-4 "
     >
     <NuxtLink
       v-for="item in filteredItems"
