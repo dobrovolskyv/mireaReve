@@ -14,8 +14,9 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 15px;
+    min-width: 320px;
 }
-
+/* 
 .fade-scale-enter-active,
 .fade-scale-leave-active {
     transition: all 0.3s ease;
@@ -54,4 +55,4 @@ body {
 .fade-enter-to,
 .fade-leave-from {
     opacity: 1;
-}
+} */

@@ -6,17 +6,17 @@
     </div>
 
 
-    <div class="flex items-start gap-[115px]  max-w-[1260px] mx-auto mt-[140px]">
+    <div class="flex items-start justify-between  max-w-[1260px] mx-auto mt-[140px]">
 
-      <div class="w-full  max-w-xs  p-6 rounded-lg space-y-6 text-sm font-medium text-black">
+      <div class="w-full  max-w-xs  p-6 rounded-lg space-y-6 text-sm font-medium text-black mr-10">
         <h2 class="text-lg font-bold">ВСЕ ФИЛЬТРЫ</h2>
 
         <!-- Цена -->
         <div>
           <label class="block mb-2 font-bold">Цена ₽</label>
           <div class="flex gap-2">
-            <input type="text" placeholder="От" class="w-1/2 p-2 rounded bg-white border border-gray-300" />
-            <input type="text" placeholder="До" class="w-1/2 p-2 rounded bg-white border border-gray-300" />
+            <input type="text" placeholder="От" class="w-[97px] p-2 rounded bg-white border border-gray-300" />
+            <input type="text" placeholder="До" class="w-[97px] p-2 rounded bg-white border border-gray-300" />
           </div>
         </div>
 
@@ -95,8 +95,8 @@
         <button class="w-full bg-black text-white py-2 rounded-full mt-2 hover:opacity-90 transition">ПОКАЗАТЬ</button>
       </div>
 
-        <CardList />
-    
+      <CardList />
+
 
     </div>
 
@@ -106,6 +106,10 @@
 <script setup>
 import CardList from '@/components/CardList.vue';
 
+
+definePageMeta({
+  layout: "navscroll"
+})
 
 
 </script>

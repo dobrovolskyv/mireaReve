@@ -4,8 +4,6 @@ import Card from "./UI/Card.vue";
 
 import { Swiper, SwiperSlide } from "swiper/vue";
 
-// Import Swiper styles
-import "swiper/css";
 
 const onSwiper = (swiper:any) => {
   console.log(swiper);
@@ -19,7 +17,7 @@ const onSlideChange = () => {
 
 <template>
 
-    <swiper
+    <Swiper
       :slides-per-view="1"
       :space-between="50"
       @swiper="onSwiper"
@@ -27,16 +25,16 @@ const onSlideChange = () => {
       loop
       class="w-[314px]"
     >
-      <swiper-slide>
+      <Swiper-Slide>
         <Card label="Silken Sateen" price="10200rub" description="Комплект постельного" />
-      </swiper-slide>
-      <swiper-slide>
+      </Swiper-Slide>
+      <Swiper-Slide>
         <Card label="Silken Sateen2" price="10200rub" description="Комплект постельного" />
-      </swiper-slide>
-      <swiper-slide>
+      </Swiper-Slide>
+      <Swiper-Slide>
         <Card  label="Silken Sateen3" price="10200rub" description="Комплект постельного" />
-      </swiper-slide>
-    </swiper>
+      </Swiper-Slide>
+    </Swiper>
   
 </template>
 

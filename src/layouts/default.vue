@@ -10,31 +10,11 @@
 
 
 
-
-  const handleScroll = () => {
-    showNav.value = window.scrollY > 100;
-
-    // if(showNav.value = window.scrollY > 500){
-    //   searchStore.closeSearch()
-    // }
-  };
-
-  onMounted(() => {
-    window.addEventListener("scroll", handleScroll);
-  });
-
-  onUnmounted(() => {
-    window.removeEventListener("scroll", handleScroll);
-
-  });
 </script>
 
 <template >
   <header class="">
-    <div :class="[
-      `bg-white fixed top-0 w-full transition-all duration-500 z-50`,
-      showNav ? `opacity-100 translate-y-0` : `opacity-0 -translate-y-10`,
-    ]">
+    <div class="bg-white fixed top-0 w-full z-50">
       <div class="container py-4 flex items-center justify-between">
         <div class="flex items-center justify-content gap-4">
           <NuxtLink to="/">
@@ -84,7 +64,7 @@
       </div>
     </div>
   </header>
-  <main >
+  <main>
     <slot />
   </main>
   <Footer />
